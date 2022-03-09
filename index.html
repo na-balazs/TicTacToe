@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <div class="flex-row">
+        <div id="1" class="top-left-box" onclick="gameBoard.renderGameBoard(1, 'X', 1)" oncontextmenu="gameBoard.renderGameBoard(1, '0', -1)"></div>
+        <div id="2" class="top-middle-box" onclick="gameBoard.renderGameBoard(2, 'X', 1)" oncontextmenu="gameBoard.renderGameBoard(2, '0', -1)"></div>
+        <div id="3" class="top-right-box" onclick="gameBoard.renderGameBoard(3, 'X', 1)" oncontextmenu="gameBoard.renderGameBoard(3, '0', -1)"></div>
+    </div>
+    <div class="flex-row">
+        <div id="4" class="middle-left-box" onclick="gameBoard.renderGameBoard(4, 'X', 1)" oncontextmenu="gameBoard.renderGameBoard(4, '0', -1)"></div>
+        <div id="5" class="central-box" onclick="gameBoard.renderGameBoard(5, 'X', 1)" oncontextmenu="gameBoard.renderGameBoard(5, '0', -1)"></div>
+        <div id="6" class="middle-right-box" onclick="gameBoard.renderGameBoard(6, 'X', 1)" oncontextmenu="gameBoard.renderGameBoard(6, '0', -1)"></div>
+    </div>
+    <div class="flex-row">
+        <div id="7" class="bottom-left-box" onclick="gameBoard.renderGameBoard(7, 'X', 1)" oncontextmenu="gameBoard.renderGameBoard(7, '0', -1)"></div>
+        <div id="8" class="bottom-middle-box" onclick="gameBoard.renderGameBoard(8, 'X', 1)" oncontextmenu="gameBoard.renderGameBoard(8, '0', -1)"></div>
+        <div id="9" class="bottom-right-box" onclick="gameBoard.renderGameBoard(9, 'X', 1)" oncontextmenu="gameBoard.renderGameBoard(9, '0', -1)"></div>
+    </div>
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+          <p></p>
+        </div>
+      
+    </div>
+
+    <div id="opening-dialogue" class="modal2">
+
+        <div id="opDial" class="modal2-content">
+                <label for="playerX">Player X:</label><br>
+                <input type="text" id="playerX" name="playerX"><br>
+                <label for="playerO">Player O:</label><br>
+                <input type="text" id="playerO" name="playerO"><br><br>
+                <button id="button">Start</button>
+        </div>
+      
+    </div>
+</body>
+</html>

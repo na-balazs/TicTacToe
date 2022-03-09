@@ -1,0 +1,158 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+div > div {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 140px;
+}
+
+.central-box {
+    border: 2px solid black;
+}
+
+.middle-left-box {
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid white;
+}
+
+.middle-right-box {
+    border-top: 2px solid black;
+    border-right: 2px solid white;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.bottom-left-box {
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+}
+
+.bottom-middle-box {
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid white;
+    border-left: 2px solid black;
+}
+
+.bottom-right-box {
+    border-top: 2px solid black;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: 2px solid black;
+}
+
+
+
+.top-left-box {
+    border-top: 2px solid white;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid white;
+}
+
+.top-middle-box {
+    border-top: 2px solid white;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.top-right-box {
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.15); /* Black w/ opacity */
+    backdrop-filter: blur(2px); /* blur the background*/
+  }
+
+  p, #opDial {
+    font-size: 30px;
+    display: block;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 25% auto;
+    padding: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.565);
+    border-radius: 8px;
+    width: 20%;
+    height: 10%;
+  }
+
+  .blur {
+    filter: blur(2px);
+    transition: all 0.3;
+  }
+
+  .modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.15); /* Black w/ opacity */
+    backdrop-filter: blur(2px); /* blur the background*/
+  }
+
+  .modal2-content {
+    background-color: #fefefe;
+    margin: 25% auto;
+    padding: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.565);
+    border-radius: 8px;
+    width: 20%;
+    height: 30%;
+  }
+
+  #button {
+      border: 2px solid black;
+      border-radius: 2px;
+      padding: 4px 15px;
+      background-color: black;
+      color: white;
+      font-weight: bold;
+  }
+
+  #playerX {
+      margin-bottom: 10px;
+  }
